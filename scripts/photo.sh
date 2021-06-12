@@ -21,9 +21,9 @@ f3="fcc_KMNP.png"
 # Montage
 montage -tile 1x2 -geometry +0+0 "$dir1/$f1" "$dir2/$f2" "figs/m1.jpg"
 # Annotate
-convert -fill white -gravity NorthWest -annotate +5+5 "A" -pointsize $ts "figs/m1.jpg" "figs/m2.jpg"
-convert -gravity NorthWest -annotate +5+405 "B" -pointsize $ts "figs/m2.jpg" "figs/cyclones.jpg"
-convert -gravity NorthWest -annotate +5+5 "C" -pointsize $ts "$dir3/$f3" "figs/m3.jpg"
+convert -fill white -gravity NorthWest -annotate +5+5 "a" -pointsize $ts "figs/m1.jpg" "figs/m2.jpg"
+convert -gravity NorthWest -annotate +5+405 "b" -pointsize $ts "figs/m2.jpg" "figs/cyclones.jpg"
+convert -gravity NorthWest -annotate +5+5 "c" -pointsize $ts "$dir3/$f3" "figs/m3.jpg"
 # Montage
 montage -tile 2x1 -geometry +0+0 "figs/cyclones.jpg" "figs/m3.jpg" "figs/fig_box.jpg"
 # Clean
